@@ -33,9 +33,9 @@ final class TimeoutException implements Exception {
 final class ParseException implements Exception {
   final String message;
 
-  const ParseException({
+  const ParseException([
     this.message = "Gagal Memproses Data JSON Dari Server",
-  });
+  ]);
 
   @override
   String toString() => "ParseException: $message";
